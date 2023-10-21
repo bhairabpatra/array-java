@@ -1,6 +1,7 @@
 package array;
 
 import java.util.Arrays;
+import java.util.NoSuchElementException;
 
 public class ArrayChallenges {
 
@@ -28,7 +29,7 @@ public class ArrayChallenges {
                 }
         }
         System.out.println(min + "-----------" + max);
-//        System.out.println(Arrays.stream(sal).max());
+        System.out.println(Arrays.stream(sal).max().orElseThrow(() -> new NoSuchElementException("No tem found")));
 //        System.out.println(Arrays.stream(sal).min());
 //        System.out.println(Arrays.stream(sal).average());
     }
@@ -98,4 +99,21 @@ public class ArrayChallenges {
         }
         return false;
     }
+
+    // Find smallest element from array
+    int[] age = {20,34,10,40,29};
+    int min = age[0]; // 20
+    public void smallestElement(){
+        for(int key = 0; key< age.length;key++){
+            if(age[key] < min){
+                min = age[key];
+            }
+       }
+        System.out.println("The smallest element is : - " +  min);
+    }
 }
+
+
+
+
+

@@ -13,11 +13,12 @@ public class Main {
 
         // Array Challenges
         ArrayChallenges arrayChallenges = new ArrayChallenges();
-        arrayChallenges.findMinMax();
-        arrayChallenges.mergeArray();
-        arrayChallenges.sortArray();
-        arrayChallenges.duplicate();
-        arrayChallenges.missingNumberArray();
+//        arrayChallenges.findMinMax();
+//        arrayChallenges.mergeArray();
+//        arrayChallenges.sortArray();
+//        arrayChallenges.duplicate();
+//        arrayChallenges.missingNumberArray();
+        arrayChallenges.smallestElement();
 
 
     }
